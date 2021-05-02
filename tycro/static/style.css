@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway&family=VT323&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 4em;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.33em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size:1.2em;
+}
+
+button {
+  padding-top: 10px;
+}
+
+.intro {
+  padding-top: 30vh;
+  height: calc(100% - 135px);
+  text-align: left;
+  width: 60%;
+  margin: auto;
+}
+
+.intro p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  padding-top: 40px;
+  text-align: justify;
+  width: 500px;
+}
+
+.intro h2 {
+  width: 500px;
+}
+
+.infosection {
+  height: 30vh;
+  width: 100%;
+  background-color: pink;
+  text-align: right;
+  padding-right: 50px;
+  padding-left: 20%;
+}
+
+.contact {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  height: 135px;
+  width: 100%;
+}
+
+.contact p {
+  text-align: left;
+  padding-left: 50px;
+  color: white;
+}
+
+.contact p:hover {
+  text-align: left;
+  padding-left: 50px;
+  color: black;
+}
+
+.button {
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  font-family: 'Lato', sans-serif;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #88CDAA;
+  color: white;
+}
+
+@media only screen and (max-device-width: 1080px){
+  body {
+    height: 100%;
+  }
+
+  .intro {
+    padding-top: 15vh;
+    height: 90%;
+    text-align: left;
+    width: 95%;
+    margin: auto;
+  }
+
+  .contact {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    height: 135px;
+  }
+
+  .contact p {
+    text-align: left;
+    padding-left: 50px;
+  }
+
+  h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 8em;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 3.15em;
+  }
+
+  .intro h2 {
+    width: 900px;
+  }
+
+  .intro p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    padding-top: 40px;
+    text-align: justify;
+    width: 80%;
+  }
+
+
+  .button {
+    font-size: 2em;
+
+  }
+
+}
