@@ -2,7 +2,7 @@ FROM python:3.9-slim
 
 # Allow statements and log messages to immediately appear in the Knative logs
 ENV PYTHONUNBUFFERED True
-ENV FLASK_APP=tycro FLASK_ENV=development
+ENV FLASK_APP=tycro
 
 # Copy local code to the container image.
 ENV APP_HOME /app
