@@ -1,8 +1,8 @@
 from flask import Flask, render_template
-#from link_shortener import link_shortener
+from link_shortener import link_shortener
 
 app = Flask(__name__)
-#app.register_blueprint(link_shortener)
+app.register_blueprint(link_shortener)
 
 
 @app.route("/")
