@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="tycro",
-    packages=["tycro", "link_shortener"],
+    packages=["tycro"],
     include_package_data=True,
-    install_requires=["flask", "firebase_admin"],
+    install_requires=["flask"],
 )
