@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, render_template
 #from link_shortener import link_shortener
 
@@ -11,4 +13,4 @@ def homepage():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
