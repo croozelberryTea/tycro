@@ -3,7 +3,6 @@ from flask import jsonify
 
 
 class LinkRepository:
-
     def __init__(self):
         # cred = credentials.Certificate("key.json")
         # default_app = initialize_app(cred)
@@ -13,7 +12,7 @@ class LinkRepository:
 
     def get_link(self, slug):
         try:
-            #link = self.link_ref.document(slug).get()
+            # link = self.link_ref.document(slug).get()
             return "jsonify(link.to_dict())", 200
         except:
             return "An error has occurred"

@@ -1,15 +1,28 @@
 import os
+import json
 
-from flask import Flask, render_template
-#from link_shortener import link_shortener
+from flask import Flask, render_template, request, Response
+
+# from link_shortener import link_shortener
 
 app = Flask(__name__)
-#app.register_blueprint(link_shortener)
+# app.register_blueprint(link_shortener)
 
 
-@app.route("/")
+@app.route("/", methods=["GET"])
 def homepage():
     return render_template("home.html")
+
+
+@app.route("/", methods=["POST"])
+def handle_contact():
+    email = request.form["email"]
+    subject = request.form["subject"]
+    body = request.form["body"]
+    print(email)
+    print(subject)
+    print(body)
+    return render_template('home.html', form=True)
 
 
 if __name__ == "__main__":

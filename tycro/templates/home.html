@@ -7,6 +7,7 @@
   <title>Tyler Crosby</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="static/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CLQ319TJQ"></script>
   <script>
@@ -27,6 +28,61 @@
   <h2>A freshly <span style="color: #88CDAa">minted</span> New England based Software Engineer.</h2>
   <p>Hi, I am a recent Computer Science graduate looking for work as a software engineer with a focus on microservices, data engineering, and full-stack web development.</p>
 </div>
+
+<div class="contact">
+    <button id="contactButton" class="button">Contact me</button>
+</div>
+
+<!-- The Modal -->
+<div id="contactModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Contact me</h2>
+    </div>
+    <div class="modal-body">
+      <form class="modalForm" method="post">
+          <label for="subject">Subject:</label><br>
+          <input type="text" id="subject" name="subject"><br>
+          <label for="subject">Email:</label><br>
+          <input type="text" id="email" name="email"><br>
+          <label for="body">What's up?:</label><br>
+          <input type="text" id="body" name="body"><br>
+          <button id="formSubmit" class="button">Submit</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<script>
+var modal = document.getElementById("contactModal");
+var btn = document.getElementById("contactButton");
+var span = document.getElementsByClassName("close")[0];
+var formsub = document.getElementById("formSubmit")
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+formsub.onclick = function() {
+    $("#formId").submit();
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
